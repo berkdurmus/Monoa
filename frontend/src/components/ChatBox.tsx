@@ -12,14 +12,15 @@ const ChatBox: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex gap-2 mt-4">
       <input
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Type a message"
+        className="flex-1 p-2 border border-gray-300 rounded"
       />
-      <button type="submit">Send</button>
+      <button type="submit" className="bg-blue-500 text-white p-2 rounded">Send</button>
     </form>
   );
 }
