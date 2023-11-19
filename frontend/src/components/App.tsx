@@ -5,13 +5,12 @@ import MessageList from './MessageList';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>React Chat App</h1>
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold underline mb-4">React Chat App</h1>
       <MessageList />
       <ChatBox />
     </div>
   );
 }
-
 export default App;
     
